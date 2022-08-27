@@ -1,4 +1,4 @@
-# A Pytorch logististic regression model to predict whether an observed object is a star, galaxy, or quasar.
+# A single layer perceptron using logististic regression to classify observed astronomical objects into: star, galaxy, or quasar.
 
 ## The Data
 
