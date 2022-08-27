@@ -51,8 +51,8 @@ class LogisticRegressionMultiClass(torch.nn.Module):
 
 
 model = LogisticRegressionMultiClass(np.shape(X_train_tensor)[1],len(np.unique(T_test_tensor)))
-criterion = torch.nn.CrossEntropyLoss()
-optimizer = torch.optim.SGD(model.parameters(), lr=0.02)
+criterion = torch.nn.CrossEntropyLoss()                                        # the loss/cost function that we try to minimize
+optimizer = torch.optim.SGD(model.parameters(), lr=0.02)                        # stochastic gradient descent optimizer
 
 model.train()
 
